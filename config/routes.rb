@@ -55,4 +55,9 @@ TheCarelessLoversWebsite::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id(.:format)))'
+
+  root  :to        => "static#home"
+  match "band"     => "static#band",     :as => "static_band"
+  match "calendar" => "static#calendar", :as => "static_calendar"
+  match "contact"  => "static#contact",  :as => "static_contact"
 end

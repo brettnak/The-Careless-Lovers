@@ -1,0 +1,14 @@
+%a.logo-wrapper
+  = image_tag "logo.png", :alt => "The Careless Lovers", :class => "logo"
+
+%ul.navigation
+  %li.home.first
+    = link_to "Home", root_path
+  %li.band
+    = link_to "The Band", static_band_path
+  %li.calendar
+    = link_to "Calendar", static_calendar_path
+  %li.contact
+    = link_to "Contact", static_contact_path
+  %li.facebook.last
+    = link_to "Facebook", "http://www.facebook.com/pages/the-Careless-Lovers/283373523379", :target => "_blank"

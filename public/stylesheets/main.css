@@ -1,0 +1,120 @@
+html {
+  height: 100%; }
+
+body {
+  background-color: #222222;
+  background-image: url(/images/band-1.jpg);
+  background-attachment: fixed;
+  background-position: 480px top;
+  background-repeat: no-repeat;
+  height: 100%;
+  font-family: Helvetica, Georgia;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 100;
+  color: #fff; }
+
+#container {
+  min-width: 980px;
+  padding-left: 10px;
+  position: relative;
+  height: 100%; }
+
+.right-rail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 491px;
+  padding-left: 30px;
+  padding-right: 30px; }
+
+.left-rail-wrapper {
+  height: 100%;
+  margin-left: 9px;
+  background-color: #bf1e2d;
+  width: 470px;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  position: fixed; }
+
+.left-rail {
+  height: 100%;
+  border-left: 1px solid #be505a;
+  border-right: 1px solid #be505a; }
+
+.left-rail-inner {
+  height: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-left: 5px solid #fff;
+  border-right: 5px solid #fff; }
+
+.logo-wrapper {
+  margin: auto;
+  width: 230px;
+  border: 0 none;
+  padding: 0;
+  display: block;
+  padding-top: 65px; }
+
+nav .navigation {
+  padding-top: 70px; }
+nav a {
+  font-size: 24px;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  padding: 20px 10px; }
+  nav a:visited {
+    color: #fff;
+    text-decoration: none; }
+  nav a:hover {
+    color: #3a3a3a; }
+nav li {
+  margin: 0 60px;
+  padding-left: 100px;
+  border-top: 1px solid #be505a;
+  border-bottom: 1px solid #91020f; }
+  nav li.first {
+    border-top: 0 none; }
+  nav li.last {
+    border-bottom: 0 none; }
+
+.content {
+  padding-top: 65px;
+  padding-bottom: 70px;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.facebook-wall {
+  background-color: white;
+  margin-top: 70px;
+  border: 1px solid #3a3a3a;
+  height: 700px; }
+
+.youtube-embed {
+  background-color: white;
+  border: 1px solid #3a3a3a;
+  height: 390px; }
+
+a {
+  color: #fff; }
+  a:visited {
+    color: #fff;
+    text-decoration: none; }
+  a:hover {
+    color: #be505a; }
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.2em;
+  text-shadow: #222222 0px 1px 2px; }
+
+p {
+  text-shadow: #222222 0px 1px 2px;
+  color: #fff;
+  line-height: 1.3em;
+  text-align: justify;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em; }
