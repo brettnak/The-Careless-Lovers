@@ -9,6 +9,7 @@ gem 'barista'
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'capistrano'
 gem 'rdiscount'
+gem 'therubyracer'
 
 group :production do
   gem 'unicorn'
