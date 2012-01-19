@@ -3,10 +3,17 @@ html {
 
 body {
   background-color: #222222;
-  background-image: url(/images/band-1.jpg);
-  background-attachment: fixed;
-  background-position: 480px top;
-  background-repeat: no-repeat;
+  background-image: url(/images/bg_pattern.gif);
+  background-repeat: repeat-x repeat-y;
+  /*
+    background: {
+      color: $gray-dark;
+      image: url(/images/band-1.jpg);
+      attachment: fixed;
+      position: 340px top;
+      repeat: no-repeat;
+    }
+  */
   height: 100%;
   font-family: Helvetica, Georgia;
   font-size: 18px;
@@ -15,7 +22,6 @@ body {
   color: #fff; }
 
 #container {
-  min-width: 980px;
   padding-left: 10px;
   position: relative;
   height: 100%; }
@@ -24,15 +30,20 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  margin-left: 491px;
+  margin-left: 350px;
   padding-left: 30px;
   padding-right: 30px; }
+
+#main {
+  margin: auto;
+  max-width: 800px;
+  min-width: 600px; }
 
 .left-rail-wrapper {
   height: 100%;
   margin-left: 9px;
   background-color: #bf1e2d;
-  width: 470px;
+  width: 320px;
   border-left: 1px solid #000;
   border-right: 1px solid #000;
   position: fixed; }
@@ -55,7 +66,7 @@ body {
   border: 0 none;
   padding: 0;
   display: block;
-  padding-top: 65px; }
+  padding-top: 45px; }
 
 nav .navigation {
   padding-top: 70px; }
@@ -64,21 +75,22 @@ nav a {
   text-decoration: none;
   display: inline-block;
   width: 100%;
-  padding: 20px 10px; }
+  padding: 10px 10px; }
   nav a:visited {
     color: #fff;
     text-decoration: none; }
   nav a:hover {
     color: #3a3a3a; }
 nav li {
-  margin: 0 60px;
-  padding-left: 100px;
-  border-top: 1px solid #be505a;
-  border-bottom: 1px solid #91020f; }
+  margin: 0 50px; }
   nav li.first {
     border-top: 0 none; }
   nav li.last {
     border-bottom: 0 none; }
+  nav li a {
+    display: block;
+    margin: auto;
+    text-align: right; }
 
 .content {
   padding-top: 65px;
