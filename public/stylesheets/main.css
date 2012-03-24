@@ -98,6 +98,9 @@ nav li {
   padding-left: 20px;
   padding-right: 20px; }
 
+.classics-wrapper img {
+  border: 1px solid #3a3a3a; }
+
 .facebook-wall {
   background-color: white;
   margin-top: 70px;
@@ -105,6 +108,7 @@ nav li {
   height: 700px; }
 
 .youtube-embed {
+  margin-top: 70px;
   background-color: white;
   border: 1px solid #3a3a3a;
   height: 390px; }

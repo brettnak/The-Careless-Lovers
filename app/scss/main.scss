@@ -145,6 +145,12 @@ nav {
   }
 }
 
+.classics-wrapper {
+  img {
+    border: 1px solid $gray;
+  }
+}
+
 .facebook-wall {
   background-color: rgba( 255, 255, 255, 1 );
   margin-top: 70px;
@@ -153,6 +159,7 @@ nav {
 }
 
 .youtube-embed {
+  margin-top: 70px;
   background-color: rgba( 255, 255, 255, 1 );
   border: 1px solid $gray;
   height: 390px;
