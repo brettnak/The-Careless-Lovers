@@ -134,3 +134,17 @@ p {
   text-align: justify;
   margin-top: 1.2em;
   margin-bottom: 1.2em; }
+
+.content.past h3, .content.past p {
+  margin: 0.5em 0.0em;
+  font-size: 15px;
+  float: left;
+  vertical-align: baseline; }
+.content.past h3, .content.past h2 {
+  clear: left; }
+.content.past h3 {
+  width: 110px; }
+.content.past h2 {
+  margin-bottom: 1.2em 0.0em; }
+.content.past p + h2 {
+  padding-top: 1.6em; }

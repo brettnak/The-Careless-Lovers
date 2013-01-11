@@ -191,3 +191,29 @@ p {
   margin-top: 1.2em;
   margin-bottom: 1.2em;
 }
+
+.content.past {
+
+  h3, p {
+    margin: 0.5em 0.0em;
+    font-size: 15px;
+    float: left;
+    vertical-align: baseline;
+  }
+
+  h3, h2 {
+    clear: left;
+  }
+
+  h3 {
+    width: 110px;
+  }
+
+  h2 {
+    margin-bottom: 1.2em 0.0em;
+  }
+
+  p + h2 {
+    padding-top: 1.6em;
+  }
+}

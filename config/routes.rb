@@ -56,8 +56,9 @@ TheCarelessLoversWebsite::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id(.:format)))'
 
-  root  :to        => "static#home"
-  match "band"     => "static#band",     :as => "static_band"
-  match "calendar" => "static#calendar", :as => "static_calendar"
-  match "contact"  => "static#contact",  :as => "static_contact"
+  root  :to          => "static#home"
+  match "band"       => "static#band",       :as => "static_band"
+  match "schedule"   => "static#schedule",   :as => "static_schedule"
+  match "contact"    => "static#contact",    :as => "static_contact"
+  match "past_gigs"  => "static#past_gigs",  :as => "static_past_gigs"
 end

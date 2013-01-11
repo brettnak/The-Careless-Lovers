@@ -30,9 +30,11 @@ class StaticController < ApplicationController
   def contact
   end
 
-  def calendar
+  def schedule
   end
 
+  def past_gigs
+  end
 end
 
 FACEBOOK_LIKE_BOX = <<EOD
