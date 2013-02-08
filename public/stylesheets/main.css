@@ -21,6 +21,9 @@ body {
   font-weight: 100;
   color: #fff; }
 
+.clear {
+  clear: both; }
+
 #container {
   padding-left: 10px;
   position: relative;
@@ -112,6 +115,8 @@ nav li {
   background-color: white;
   border: 1px solid #3a3a3a;
   height: 390px; }
+  .youtube-embed.first {
+    margin-top: 0px; }
 
 a {
   color: #fff; }

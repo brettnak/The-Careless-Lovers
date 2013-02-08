@@ -8,6 +8,9 @@ class StaticController < ApplicationController
 
   @@s_facebook_like_box = nil
   @@s_youtube_embed = nil
+
+  @@s_black_coffee_youtube_embed
+  @@s_big_butter_and_egg_man_youtube_embed
   def home
     force_regen = Rails.env.development?
 
@@ -17,11 +20,16 @@ class StaticController < ApplicationController
 
     @facebook_like_box = @@s_facebook_like_box
 
-    if force_regen || @@s_youtube_embed.nil?
-      @@s_youtube_embed = BLACK_COFFEE_YOUTUBE.gsub( "YOUTUBE_WIDTH", YOUTUBE_WIDTH ).gsub( "YOUTUBE_HEIGHT", YOUTUBE_HEIGHT )
+    if force_regen || @@s_black_coffee_youtube_embed.nil?
+      @@s_black_coffee_youtube_embed = BLACK_COFFEE_YOUTUBE.gsub( "YOUTUBE_WIDTH", YOUTUBE_WIDTH ).gsub( "YOUTUBE_HEIGHT", YOUTUBE_HEIGHT )
+    end
+
+    if force_regen || @@s_big_butter_and_egg_man_youtube_embed.nil?
+      @@s_big_butter_and_egg_man_youtube_embed = BIG_BUTTER_AND_EGG_MAN_YOUTUBE.gsub( "YOUTUBE_WIDTH", YOUTUBE_WIDTH ).gsub( "YOUTUBE_HEIGHT", YOUTUBE_HEIGHT )
     end
     
-    @youtube_embed = @@s_youtube_embed
+    @black_coffee_youtube_embed           = @@s_black_coffee_youtube_embed
+    @big_butter_and_egg_man_youtube_embed = @@s_big_butter_and_egg_man_youtube_embed
   end
 
   def band
@@ -42,5 +50,9 @@ FACEBOOK_LIKE_BOX = <<EOD
 EOD
 
 BLACK_COFFEE_YOUTUBE = <<EOD
-<iframe width="YOUTUBE_WIDTH" height="YOUTUBE_HEIGHT" src="http://www.youtube.com/embed/bd3Yu-ImZk0" frameborder="0" allowfullscreen></iframe>
+  <iframe width="YOUTUBE_WIDTH" height="YOUTUBE_HEIGHT" src="http://www.youtube.com/embed/bd3Yu-ImZk0" frameborder="0" allowfullscreen></iframe>
+EOD
+
+BIG_BUTTER_AND_EGG_MAN_YOUTUBE = <<EOD
+  <iframe width="YOUTUBE_WIDTH" height="YOUTUBE_HEIGHT" src="http://www.youtube.com/embed/8yCXOKIfFb0" frameborder="0" allowfullscreen></iframe>
 EOD
